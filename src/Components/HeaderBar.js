@@ -8,7 +8,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 
 export default function HeaderBar() {
-  const [auth] = React.useState(true);
+  const [auth] = React.useState(false);
 
   return (
     <Box sx={{ flexGrow: 1 }}>
