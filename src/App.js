@@ -1,15 +1,24 @@
 import './App.css';
 import ContentContainer from './Components/ContentContainer';
 import HeaderBar from './Components/HeaderBar';
+import { MuiThemeProvider, createTheme } from '@material-ui/core/styles';
+
+const theme = createTheme({
+	shape: {
+		borderRadius: 8
+	}
+});
 function App() {
-  return (
-    <div className="App">
-      <header>
-        <HeaderBar></HeaderBar>
-      </header>
-      <ContentContainer></ContentContainer>
-    </div>
-  );
+	return (
+		<MuiThemeProvider theme={theme}>
+			<div className="App">
+				<header>
+					<HeaderBar />
+				</header>
+				<ContentContainer />
+			</div>
+		</MuiThemeProvider>
+	);
 }
 
 export default App;
