@@ -8,6 +8,11 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
+import RefreshIcon from '@mui/icons-material/Refresh';
+import ViewStreamIcon from '@mui/icons-material/ViewStream';
+import SettingsIcon from '@mui/icons-material/Settings';
+import AppsIcon from '@mui/icons-material/Apps';
+import { Grid } from '@mui/material';
 
 const Search = styled('div')(({ theme }) => ({
 	position: 'relative',
@@ -73,6 +78,20 @@ export default function Header() {
 						</SearchIconWrapper>
 						<StyledInputBase placeholder="Search…" inputProps={{ 'aria-label': 'search' }} />
 					</Search>
+					<Grid container direction="row" justifyContent="flex-end" alignItems="center" container spacing={6}>
+						<Grid item xs={1}>
+							<RefreshIcon />
+						</Grid>
+						<Grid item xs={1}>
+							<ViewStreamIcon />
+						</Grid>
+						<Grid item xs={1}>
+							<SettingsIcon />
+						</Grid>
+						<Grid item xs={1}>
+							<AppsIcon />
+						</Grid>
+					</Grid>
 				</Toolbar>
 			</AppBar>
 		</Box>
