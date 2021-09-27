@@ -16,7 +16,7 @@ export default function Header() {
 					<IconButton size="large" edge="start" color="inherit" aria-label="open drawer" sx={{ mr: 2 }}>
 						<MenuIcon />
 					</IconButton>
-					MUI
+					Notes
 					<Typography
 						variant="h6"
 						noWrap

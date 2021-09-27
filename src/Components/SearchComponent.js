@@ -6,12 +6,11 @@ import { Grid } from '@mui/material';
 const Search = styled('div')(({ theme }) => ({
 	position: 'relative',
 	borderRadius: theme.shape.borderRadius,
-	backgroundColor: alpha(theme.palette.common.white, 0.15),
+	backgroundColor: alpha('#778899', 0.15),
 	'&:hover': {
-		backgroundColor: alpha(theme.palette.common.white, 0.25)
+		backgroundColor: alpha('#778899', 0.25)
 	},
 	marginLeft: 0,
-	float: 'left',
 	width: '100%',
 	[theme.breakpoints.up('sm')]: {
 		marginLeft: theme.spacing(1),
@@ -38,7 +37,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 		transition: theme.transitions.create('width'),
 		width: '100%',
 		[theme.breakpoints.up('sm')]: {
-			width: '12ch',
+			width: '40ch',
 			'&:focus': {
 				width: '20ch'
 			}
@@ -53,7 +52,7 @@ export default function SearchComponent() {
 				<SearchIconWrapper>
 					<SearchIcon />
 				</SearchIconWrapper>
-				<StyledInputBase placeholder="Search…" inputProps={{ 'aria-label': 'search' }} />
+				<StyledInputBase placeholder="Search" inputProps={{ 'aria-label': 'search' }} />
 			</Search>
 		</Grid>
 	);
