@@ -11,7 +11,12 @@ import ActionComponent from './ActionComponent';
 export default function Header() {
 	return (
 		<Box sx={{ flexGrow: 1 }}>
-			<AppBar position="static" color="transparent">
+			<AppBar
+				position="static"
+				color="transparent"
+				elevation={0}
+				sx={{ borderBottom: '1px solid rgb(212, 212, 212)' }}
+			>
 				<Toolbar>
 					<IconButton size="large" edge="start" color="inherit" aria-label="open drawer" sx={{ mr: 2 }}>
 						<MenuIcon />
