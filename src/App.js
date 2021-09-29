@@ -2,6 +2,7 @@ import './App.css';
 import ContentContainer from './Components/ContentContainer';
 import HeaderBar from './Components/HeaderBar';
 import { MuiThemeProvider, createTheme } from '@material-ui/core/styles';
+import NotePaperComponent from './Components/NotePaperComponent';
 
 const theme = createTheme({
 	shape: {
@@ -16,6 +17,8 @@ function App() {
 					<HeaderBar />
 				</header>
 				<ContentContainer />
+				<NotePaperComponent />
+				<NotePaperComponent />
 			</div>
 		</MuiThemeProvider>
 	);
