@@ -13,9 +13,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 		// vertical padding + font size from searchIcon
 		width: '100%',
 		[theme.breakpoints.up('sm')]: {
-			width: '40ch',
+			width: '45ch',
 			'&:focus': {
-				width: '40ch'
+				width: '45ch'
 			}
 		}
 	}
@@ -28,19 +28,19 @@ export default function TakeANoteContainer() {
 
 	return (
 		<Box mt={3} sx={{ boxShadow: 4 }} borderRadius={2}>
-			<Grid xs={12} direction="row" justifyContent="flex-end" alignItems="center" container spacing={1}>
+			<Grid item xs={12} direction="row" justifyContent="flex-end" alignItems="center" container spacing={1}>
 				<StyledInputBase
 					placeholder="Take a Note..."
 					inputProps={{ 'aria-label': 'Take a Note...' }}
 					onClick={changeLayout}
 				/>
-				<Grid item xs={1.2}>
+				<Grid item xs={1}>
 					<CheckBoxOutlinedIcon />
 				</Grid>
-				<Grid item xs={1.2}>
+				<Grid item xs={1}>
 					<BrushOutlinedIcon />
 				</Grid>
-				<Grid item xs={1.2}>
+				<Grid item xs={1}>
 					<CropOriginalOutlinedIcon />
 				</Grid>
 			</Grid>

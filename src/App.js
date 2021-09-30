@@ -18,7 +18,6 @@ function App() {
 				</header>
 				<ContentContainer />
 				<NotePaperComponent />
-				<NotePaperComponent />
 			</div>
 		</MuiThemeProvider>
 	);
